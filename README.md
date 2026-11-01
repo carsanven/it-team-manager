@@ -134,7 +134,7 @@ Este procedimiento permite que otra persona compruebe si puede obtener el códig
 Una vez que el repositorio sea público, otra persona puede clonarlo desde su propio equipo:
 
 ```bash
-git clone https://github.com/USUARIO/IT-Team-Manager.git
+git clone https://github.com/dakardu/it-team-manager.git
 ```
 
 Sustituye `USUARIO` por el nombre real de la cuenta de GitHub propietaria del repositorio.
@@ -142,7 +142,7 @@ Sustituye `USUARIO` por el nombre real de la cuenta de GitHub propietaria del re
 ### 2. Acceder al directorio
 
 ```bash
-cd IT-Team-Manager
+cd it-team-manager
 ```
 
 ### 3. Abrir el proyecto
