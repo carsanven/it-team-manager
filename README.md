@@ -23,17 +23,17 @@ La aplicación está diseñada como una solución ligera, sin necesidad de confi
 
 ## 🛠️ Tecnologías utilizadas
 
-| Tecnología                     | Función                                       |
-| ------------------------------ | --------------------------------------------- |
-| HTML5                          | Estructura de la aplicación                   |
-| CSS3                           | Estilos y presentación visual                 |
-| JavaScript                     | Lógica e interactividad                       |
-| JSON                           | Almacenamiento de las incidencias de ejemplo  |
-| Git y GitHub                   | Control de versiones y publicación del código |
-| Visual Studio Code             | Editor de código                              |
-| Live Server                    | Servidor de desarrollo local                  |
-| Git                            | Control de versiones local                    |
-| Vercel                         | Despliegue de la aplicación web               |
+| Tecnología         | Función                                       |
+| ------------------ | --------------------------------------------- |
+| HTML5              | Estructura de la aplicación                   |
+| CSS3               | Estilos y presentación visual                 |
+| JavaScript         | Lógica e interactividad                       |
+| JSON               | Almacenamiento de las incidencias de ejemplo  |
+| Git y GitHub       | Control de versiones y publicación del código |
+| Visual Studio Code | Editor de código                              |
+| Live Server        | Servidor de desarrollo local                  |
+| Git                | Control de versiones local                    |
+| Vercel             | Despliegue de la aplicación web               |
 
 ## 📁 Estructura del proyecto
 
@@ -83,7 +83,7 @@ La aplicación no necesita instalar dependencias de Node.js ni configurar una ba
 Si todavía no tienes una copia local, ejecuta estos comandos en una terminal:
 
 ```bash
-git clone https://github.com/dakardu/it-team-manager.git
+git clone https://github.com/carsaven/it-team-manager.git
 cd it-team-manager
 ```
 
