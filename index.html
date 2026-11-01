@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1120">
+  <meta name="description" content="Panel de gestión de incidencias y soporte informático.">
+  <title>IT Team Manager · Incidencias</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="IT Team Manager, inicio">
+        <span class="brand-mark">IT</span><span class="brand-copy"><strong>IT Team</strong><small>MANAGER</small></span>
+      </a>
+      <div class="workspace-label">ESPACIO DE TRABAJO</div>
+      <nav class="nav-links">
+        <a class="nav-link" href="#inicio"><span class="nav-icon">⌂</span>Resumen</a>
+        <a class="nav-link active" href="#incidencias" aria-current="page"><span class="nav-icon">▤</span>Incidencias<span class="nav-count" id="nav-count">—</span></a>
+        <a class="nav-link" href="#equipo"><span class="nav-icon">♙</span>Equipo</a>
+        <a class="nav-link" href="#informes"><span class="nav-icon">▥</span>Informes</a>
+      </nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span><span><strong>Todos los sistemas operativos</strong><small>Actualizado hace un momento</small></span></div>
+    </aside>
+
+    <main class="main-content" id="inicio">
+      <header class="topbar"><div class="breadcrumb">Soporte <span>/</span> <strong>Incidencias</strong></div><div class="topbar-right"><span class="today" id="today"></span><button class="avatar" aria-label="Perfil de Ana García">AG</button></div></header>
+      <section class="page-heading" id="incidencias">
+        <div><p class="eyebrow">CENTRO DE SOPORTE</p><h1>Incidencias</h1><p class="subtitle">Controla y organiza las solicitudes de tu equipo.</p></div>
+        <button class="primary-button" id="new-ticket"><span>＋</span> Nueva incidencia</button>
+      </section>
+
+      <section class="metrics-grid" aria-label="Métricas de incidencias por estado">
+        <article class="metric-card metric-new"><div class="metric-top"><span>Nueva</span><span class="metric-icon">＋</span></div><strong class="metric-value" id="metric-new">—</strong><span class="metric-note">Incidencias por atender</span></article>
+        <article class="metric-card metric-progress"><div class="metric-top"><span>En progreso</span><span class="metric-icon">↻</span></div><strong class="metric-value" id="metric-progress">—</strong><span class="metric-note">En manos del equipo</span></article>
+        <article class="metric-card metric-waiting"><div class="metric-top"><span>En Waiting</span><span class="metric-icon">◷</span></div><strong class="metric-value" id="metric-waiting">—</strong><span class="metric-note">Esperando respuesta</span></article>
+        <article class="metric-card metric-resolved"><div class="metric-top"><span>Resuelta</span><span class="metric-icon">✓</span></div><strong class="metric-value" id="metric-resolved">—</strong><span class="metric-note">Incidencias cerradas</span></article>
+      </section>
+
+      <section class="ticket-panel" aria-labelledby="tickets-title">
+        <div class="panel-heading"><div><h2 id="tickets-title">Todas las incidencias</h2><p>Consulta y gestiona las solicitudes de soporte.</p></div><button class="export-button" id="export-button" type="button">↓ <span>Exportar</span></button></div>
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar incidencias..." aria-label="Buscar incidencias"></label>
+          <label class="select-wrap"><span class="sr-only">Filtrar por estado</span><select id="status-filter"><option value="all">Todos los estados</option><option value="Nueva">Nueva</option><option value="En progreso">En progreso</option><option value="En Waiting">En Waiting</option><option value="Resuelta">Resuelta</option></select></label>
+          <label class="select-wrap"><span class="sr-only">Filtrar por prioridad</span><select id="priority-filter"><option value="all">Todas las prioridades</option><option value="Crítica">Crítica</option><option value="Alta">Alta</option><option value="Media">Media</option><option value="Baja">Baja</option></select></label>
+        </div>
+        <div class="table-scroll"><table><thead><tr><th>INCIDENCIA</th><th>ESTADO</th><th>PRIORIDAD</th><th>ASIGNADO A</th><th>FECHA</th><th></th></tr></thead><tbody id="ticket-rows"><tr><td colspan="6" class="loading-cell">Cargando incidencias…</td></tr></tbody></table></div>
+        <div class="table-footer"><span id="results-count">Cargando datos…</span><span class="data-source">Datos de demostración</span></div>
+      </section>
+      <footer class="footer">IT Team Manager <span>·</span> Panel de soporte interno</footer>
+    </main>
+  </div>
+  <dialog id="ticket-dialog" class="ticket-dialog"><form method="dialog"><button class="dialog-close" aria-label="Cerrar">×</button><p class="eyebrow">DEMO INTERACTIVA</p><h2>Nueva incidencia</h2><p>La creación de incidencias estará disponible cuando se conecte un servicio de soporte.</p><button class="primary-button dialog-ok">Entendido</button></form></dialog>
+</body>
+</html>

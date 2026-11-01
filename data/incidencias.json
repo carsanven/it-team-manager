@@ -1,0 +1,11 @@
+[
+  {"id":"INC-2048","title":"No puedo acceder a la VPN corporativa","description":"Error de autenticación al conectar desde casa","status":"En progreso","priority":"Alta","assignee":"Lucía Martín","date":"2026-10-28","initials":"LM"},
+  {"id":"INC-2047","title":"Solicitud de acceso a carpeta de Finanzas","description":"Permisos de lectura para el cierre mensual","status":"En Waiting","priority":"Media","assignee":"Carlos Ruiz","date":"2026-10-28","initials":"CR"},
+  {"id":"INC-2046","title":"Portátil con rendimiento muy lento","description":"El equipo tarda varios minutos en iniciar","status":"Nueva","priority":"Crítica","assignee":"Marcos Vega","date":"2026-10-27","initials":"MV"},
+  {"id":"INC-2045","title":"Configurar correo en dispositivo móvil","description":"Configuración de correo y calendario","status":"Resuelta","priority":"Baja","assignee":"Sofía López","date":"2026-10-27","initials":"SL"},
+  {"id":"INC-2044","title":"Impresora de planta 2 sin conexión","description":"La impresora no aparece en la red","status":"En progreso","priority":"Alta","assignee":"Diego Torres","date":"2026-10-26","initials":"DT"},
+  {"id":"INC-2043","title":"Instalación de licencia de diseño","description":"Instalar y activar la licencia asignada","status":"En Waiting","priority":"Media","assignee":"Lucía Martín","date":"2026-10-26","initials":"LM"},
+  {"id":"INC-2042","title":"Restablecer contraseña de usuario","description":"El usuario ha bloqueado su cuenta","status":"Resuelta","priority":"Baja","assignee":"Carlos Ruiz","date":"2026-10-25","initials":"CR"},
+  {"id":"INC-2041","title":"Caídas intermitentes de Wi-Fi en sala B","description":"Desconexiones durante reuniones","status":"Nueva","priority":"Crítica","assignee":"Marcos Vega","date":"2026-10-24","initials":"MV"},
+  {"id":"INC-2040","title":"Actualizar software de gestión","description":"Actualizar cliente a la última versión","status":"Resuelta","priority":"Baja","assignee":"Sofía López","date":"2026-10-23","initials":"SL"}
+]
