@@ -6,6 +6,8 @@ IT Team Manager es una aplicación web desarrollada como parte de un reto práct
 
 La aplicación está diseñada como una solución ligera, sin necesidad de configurar un servidor backend ni una base de datos.
 
+**Repositorio GitHub:** https://github.com/dakardu/it-team-manager
+
 ## 📋 Características
 
 - **Listado de incidencias:** visualización de las incidencias registradas.
@@ -28,7 +30,9 @@ La aplicación está diseñada como una solución ligera, sin necesidad de confi
 | JavaScript                     | Lógica e interactividad                       |
 | JSON                           | Almacenamiento de las incidencias de ejemplo  |
 | Git y GitHub                   | Control de versiones y publicación del código |
-| Visual Studio Code Live Server | Servidor de desarrollo local                  |
+| Visual Studio Code             | Editor de código                              |
+| Live Server                    | Servidor de desarrollo local                  |
+| Git                            | Control de versiones local                    |
 | Vercel                         | Despliegue de la aplicación web               |
 
 ## 📁 Estructura del proyecto
@@ -69,9 +73,21 @@ La aplicación no necesita instalar dependencias de Node.js ni configurar una ba
 
 ### Requisitos
 
+- Git, si vas a clonar el repositorio desde la terminal.
 - Visual Studio Code.
 - Extensión **Live Server** instalada en Visual Studio Code.
 - Navegador web actualizado.
+
+### Obtener el proyecto desde GitHub
+
+Si todavía no tienes una copia local, ejecuta estos comandos en una terminal:
+
+```bash
+git clone https://github.com/dakardu/it-team-manager.git
+cd it-team-manager
+```
+
+Si ya tienes el proyecto en tu equipo, no es necesario volver a clonarlo; continúa con el siguiente apartado.
 
 ### Pasos para ejecutar la aplicación
 
@@ -125,29 +141,13 @@ Vercel también puede añadir otras cabeceras a la respuesta según la configura
 
 La presencia de estas cabeceras es una medida de protección, pero no constituye por sí sola una auditoría completa de seguridad.
 
-## 🔄 Reproducir el proyecto desde GitHub
+## 🔄 Reproducir y validar el proyecto
 
-Este procedimiento permite que otra persona compruebe si puede obtener el código y ejecutar la aplicación de forma independiente.
+Este procedimiento permite que otra persona compruebe si puede obtener el código y ejecutar la aplicación de forma independiente. Si todavía no tiene el repositorio, debe seguir primero el apartado **Obtener el proyecto desde GitHub** de la sección de ejecución local; no es necesario clonarlo dos veces.
 
-### 1. Clonar el repositorio
+### 1. Abrir el proyecto
 
-Una vez que el repositorio sea público, otra persona puede clonarlo desde su propio equipo:
-
-```bash
-git clone https://github.com/dakardu/it-team-manager.git
-```
-
-Sustituye `USUARIO` por el nombre real de la cuenta de GitHub propietaria del repositorio.
-
-### 2. Acceder al directorio
-
-```bash
-cd it-team-manager
-```
-
-### 3. Abrir el proyecto
-
-1. Abre la carpeta clonada en Visual Studio Code.
+1. Abre la carpeta `it-team-manager` clonada en Visual Studio Code.
 2. Comprueba que la extensión Live Server está instalada.
 3. Abre `index.html`.
 4. Selecciona **Open with Live Server**.
@@ -158,7 +158,7 @@ http://127.0.0.1:5500/
 
 El puerto puede variar si ya está ocupado o si Live Server tiene otra configuración.
 
-### 4. Validar el funcionamiento
+### 2. Validar el funcionamiento
 
 Comprueba, como mínimo, los siguientes puntos:
 
@@ -169,7 +169,7 @@ Comprueba, como mínimo, los siguientes puntos:
 - La exportación genera el resultado previsto.
 - No aparecen errores que impidan utilizar la aplicación.
 
-### 5. Documentar el resultado
+### 3. Documentar el resultado
 
 La persona que realice la prueba puede registrar:
 
@@ -199,7 +199,7 @@ Las capturas que deban formar parte de la documentación pública tienen que est
 
 ## 📸 Evidencias y mantenimiento
 
-El directorio `capturas/` contiene evidencias visuales relacionadas con la documentación y el mantenimiento del proyecto.
+Si el directorio `capturas/` está incluido en el repositorio, contiene evidencias visuales relacionadas con la documentación y el mantenimiento del proyecto. Comprueba que las imágenes citadas en la estructura están realmente publicadas en GitHub.
 
 Estas evidencias complementan la documentación técnica y permiten consultar el estado de la aplicación y los trabajos realizados.
 
